@@ -1,6 +1,6 @@
 const BASE_URL = "https://botfilter-h5ddh6dye8exb7ha.centralus-01.azurewebsites.net/api";
 
-export async function httpGet(url) {
+export async function httpGet(path) {
     const response = await fetch(`${BASE_URL}/${path}`);
     if (!response.ok) {
         throw new Error(`HTTP error! status: ${response.status}`);

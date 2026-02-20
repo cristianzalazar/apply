@@ -1,5 +1,5 @@
 import './App.css'
-import PositionList from './components/PositionList'
+import Positions from './components/Positions/Positions'
 
 export default function App() {
   return (
