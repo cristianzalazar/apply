@@ -25,6 +25,7 @@ export default function Positions() {
         uuid: candidate.uuid,
         jobId: positionId,
         candidateId: candidate.candidateId,
+        applicationId: candidate.applicationId,
         repoUrl: repoUrl,
       })
       alert('Postulacion enviada')
