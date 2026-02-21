@@ -1,6 +1,7 @@
 export default function PositionItem({ position, onSubmit }) {
     return (
         <li
+        key={position.id}
         className="
             bg-white
             border border-slate-200

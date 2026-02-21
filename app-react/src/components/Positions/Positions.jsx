@@ -11,7 +11,7 @@ export default function Positions() {
     return <h1>Loading...</h1>
   }
 
-  const handleApply = async (positionId) => {
+  const handleApply = async (e, positionId) => {
     e.preventDefault();
     const repoUrl = e.currentTarget.repoUrl.value;
 
@@ -24,7 +24,7 @@ export default function Positions() {
       await createApplication({
         uuid: candidate.uuid,
         jobId: positionId,
-        candidateId: candidate.id,
+        candidateId: candidate.candidateId,
         repoUrl: repoUrl,
       })
       alert('Postulacion enviada')
